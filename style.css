@@ -1,0 +1,85 @@
+/* .contsiner {
+  display: grid; */
+/* grid-template-columns: 100px, 100px, 100px;
+   */
+/* grid-template-columns: repeat(4, auto);
+   */
+/* grid-template-columns: repeat(4, auto) 200px;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+
+.element {
+  border: 2px solid aquamarine;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  background-color: blue;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: green;
+} */
+
+.cont {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-areas:
+    "header header header"
+    "london paris text1"
+    "turtsiya turtsiya venice"
+    "text2 text2 venice";
+
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  /* justify-items: center;
+  align-items: center; */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+p {
+  font-size: 30px;
+  color: brown;
+}
+header {
+  grid-area: header;
+  justify-items: center;
+  align-items: center;
+}
+.london {
+  grid-area: london;
+}
+.paris {
+  grid-area: paris;
+}
+.text1 {
+  grid-area: text1;
+  justify-items: center;
+  align-items: center;
+}
+.Turtsiya {
+  grid-area: turtsiya;
+}
+.venice {
+  grid-area: venice;
+}
+.text2 {
+  grid-area: text2;
+  justify-items: center;
+  align-items: center;
+}
